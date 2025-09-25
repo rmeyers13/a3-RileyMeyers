@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #007A33; /*All celtics colors*/
+    --secondary-color: #BA9653;
+    --dark-green: #005522;
+    --off-white: #F8F9FA;
+    --dark-bg: #0A2E1D;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: var(--off-white);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-green) 100%);
+    color: white;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 122, 51, 0.08);
+}
+
+.navbar-dark {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-green) 100%) !important;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 122, 51, 0.25);
+}
+
+.table th {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-green) 100%);
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 122, 51, 0.05);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-green) 100%);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+}
